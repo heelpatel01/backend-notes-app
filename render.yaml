@@ -1,16 +1,16 @@
 services:
   - type: web
-    name: my-app
+    name: notes-app
     env: node
     plan: free
     buildCommand: 'npm install'
-    startCommand: 'node index.js' # Update if your entry point is different
+    startCommand: 'npm start'
     envVars:
       - key: NODE_ENV
         value: production
       - key: ACCESS_TOKEN_SECRET
-        fromDatabase: <DATABASE_NAME>
+        value: your_secret_key
       - key: PORT
-        fromDatabase: <DATABASE_NAME>
+        value: 8000
       - key: DB_CONNECTION_STRING
-        fromDatabase: <DATABASE_NAME>
+        value: your_connection_string

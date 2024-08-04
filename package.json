@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "Heel Patel",
@@ -16,7 +17,6 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.8.0",
-    "mongoose": "^8.5.1",
-    "nodemon": "^3.1.4"
+    "mongoose": "^8.5.1"
   }
 }
